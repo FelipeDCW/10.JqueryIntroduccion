@@ -11,13 +11,26 @@ titulo2.click(function(){
 })
 
 $(`#mostrar`).on(`click`,function(){
-    $(`#tituloJquery`).show()
+    $(`#tituloJquery`).show() /* mostrar el elemento */
 })
 
 $(`#Ocultar`).on(`click`,function(){
-    $(`#tituloJquery`).hide()
+    $(`#tituloJquery`).hide() /* ocultar el elemento */
 })
 
 $(`#mostrarOcultar`).on(`click`,function(){
-    $(`#tituloJquery`).toggle()
+    $(`#tituloJquery`).toggle() /* ocultar o mostrar el elemento */
 })
+
+let arreglojq = $(`.hola`)
+console.log(arreglojq)
+for (let i=0; i < arreglojq.length;i++){
+    console.log(arreglojq[i])
+}
+
+let arregloselectorall = document.querySelectorAll(`.hola`)
+
+arregloselectorall.forEach(function(indice) {
+    console.log(indice)
+});
+
